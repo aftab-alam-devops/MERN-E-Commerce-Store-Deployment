@@ -21,7 +21,7 @@ jobs:
 
     # 🔨 Build Backend
     - name: Build Backend
-      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/backend-app .
+      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/backend-app ./backend
 
     # 📤 Push Backend
     - name: Push Backend
@@ -29,7 +29,7 @@ jobs:
 
     # 🔨 Build Frontend
     - name: Build Frontend
-      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/frontend-app .
+      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/frontend-app ./frontend
 
     # 📤 Push Frontend
     - name: Push Frontend
