@@ -53,6 +53,7 @@ jobs:
 
           docker run -d -p 5000:5000 --name backend \
           -e MONGO_URI=${{ secrets.MONGO_URI }} \
+          -e JWT_SECRET=${{ secrets.JWT_SECRET }}
           -e NODE_ENV=production \
           ${{ secrets.DOCKER_USERNAME }}/mern-app-backend
 
