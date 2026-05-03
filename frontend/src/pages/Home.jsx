@@ -29,7 +29,7 @@ const Home = () => {
               to="/shop"
               className="bg-pink-600 font-bold rounded-full py-2 px-10 mr-[18rem] mt-[10rem]"
             >
-              Shop Now
+              Kharidari shuru karein
             </Link>
           </div>
 
