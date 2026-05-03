@@ -57,4 +57,4 @@ jobs:
           -e NODE_ENV=production \
           ${{ secrets.DOCKER_USERNAME }}/mern-app-backend
 
-          docker run -d -p 80:80 --name frontend ${{ secrets.DOCKER_USERNAME }}/mern-app-frontend
+          docker run -d -p 3000:80 --name frontend ${{ secrets.DOCKER_USERNAME }}/mern-app-frontend
